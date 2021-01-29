@@ -5,8 +5,8 @@ export default function App() {
   const [firstDieResult, setFirstDieResult] = useState(1);
   const [secondDieResult, setSecondDieResult] = useState(6);
 
-  const firstDieImage = require(`./assets/${firstDieResult}.png`);
-  const secondDieImage = require(`./assets/${secondDieResult}.png`);
+  const firstDieImage = require(`./assets/${firstDieResult}.png`).default;
+  const secondDieImage = require(`./assets/${secondDieResult}.png`).default;
 
   return (
     <div className="App">
